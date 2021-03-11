@@ -7,11 +7,13 @@ import Landing from '../components/landing';
 
 export default function Main(){
     return (
+        
         <Router>
             <Route exact path={"/"} component={Landing}></Route>
-            <Header>
             <Route exact path={"/login"} component={Login}></Route>
-            </Header>
+            <Route exact path={"/home"}><Header></Header></Route>
+            <Route exact path={"/drive"}><Header></Header></Route>
         </Router>
+        
     )
 }
