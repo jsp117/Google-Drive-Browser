@@ -1,7 +1,8 @@
 const router = require("express").Router();
 
-router.route("/google")
-.get("...")
+router.route('/google').get((req, res) => {res.status(202).send("working")});
 
-router.route("/facebook")
-.get("...")
+// router.route("/facebook")
+// .get("...")
+
+module.exports = router;
