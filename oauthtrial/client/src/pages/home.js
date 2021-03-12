@@ -13,6 +13,7 @@ export default function Main(){
             <Route exact path={"/login"} component={Login}></Route>
             <Route exact path={"/home"}><Header></Header></Route>
             <Route exact path={"/drive"}><Header></Header></Route>
+            <Route exact path={"/auth/google"}><div className="mt-40 text-center">Redirecting...</div></Route>
         </Router>
         
     )
