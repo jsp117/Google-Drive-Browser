@@ -1,6 +1,5 @@
-const router = require('express').Router();
-const passport = require('passport');
 const cors = require('cors');
+const passport = require('passport');
 
 router.get('/google', cors(), passport.authenticate('google', {
     scope: ['profile']
@@ -16,4 +15,3 @@ router.get('/google/redirect', (req, res)=>{
 // router.route("/facebook")
 // .get("...")
 
-module.exports = router;
